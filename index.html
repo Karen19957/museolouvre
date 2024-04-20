@@ -1,0 +1,205 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Museo de Louvre</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo Louvre</a>
+          <a href="#secc2">Historia</a>
+          <a href="#secc3">Obras destacadas</a>
+          <a href="#secc4">Arquitectura</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Museo de Louvre es uno de los museos más visitados por todo el mundo, ubicado en la ciudad de París, Francia. En dicho museo, se guarda muchas de las obras artísticas (pinturas, esculturas, entre otros) que son reconocidas de manera mundial, exponiéndose ante el público general.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/estructura.png" title="estructura">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<!--texto para imagen a la derecha-->
+	        		<p>Imagen simplificada del Museo Louvre.</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/estructura.png" title="estructura">
+	        		<!--texto para la imagen-->
+	        		<p>Imagen simplificada del Museo Louvre.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Historia</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El museo está ubicado en el Palacio del Louvre, una antigua fortaleza construida por el rey Felipe II a finales del siglo XII.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En 1682, el rey Luis XIV trasladó su residencia al Palacio de Versalles, de modo que el Louvre sirvió exclusivamente como espacio de exposición de la colección de arte real.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>La Academia tuvo su sede en el Louvre durante más de 100 años. Sin embargo, durante la Revolución Francesa, la Asamblea Nacional decidió que el Louvre debería usarse exclusivamente como museo, permitiendo a la nación acceder a sus obras maestras. En concreto, el museo abrió sus puertas el 10 de agosto de 1793 con una exposición que incluía un total de 537 obras que fueron expropiadas a la familia real y a la iglesia.</p>
+		        <br>
+		        <p>La colección de obras del Louvre creció durante el reinado de Luis XVIII. y Carlos X, así como exponencialmente durante el Segundo Imperio Francés. En concreto, el museo adquirió en ese momento 20.000 obras adicionales.</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Obras destacadas</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><b>Victoria de Samotracia</b></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Esculpida aproximadamente en el año 190 a. C., impresiona observar la delicadeza del trabajo realizado sobre el mármol de Paros en el que el cuerpo de la mujer, lleno de dinamismo, aparece cubierto por un ropaje que se le adhiere graciosamente, perfilando el vientre y los muslos.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/victoria_de_samotracia.png" title="samotracia">
+        	</div>
+        		<p><b>La Venus de Milo</b></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Su nombre viene dado por la isla griega de Milo, donde se encontró en 1820. El marqués de Rivière, entonces embajador de Francia en Grecia, la adquirió casi de inmediato y se la regaló al rey Luis XVIII. El soberano la cedió a su vez al Louvre en marzo de 1821. En apenas dos años, la Venus pasó de las sombras a la luz.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/venus_de_milo.png" title="venus">
+        	</div>
+        		<br>
+        		<p><b>La Gioconda</b></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La pintura de La Gioconda representa el retrato de la joven Lisa Gherardini, esposa de Francesco del Giocondo. Su autor es el genio Leonardo da Vinci (1452 – 1519), quien la pintó al óleo sobre una tabla de álamo de 77 por 53 cm entre los años 1503 y 1519.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/monalisa.png" title="monalisa">
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Arquitectura</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Este edificio mide 160.000 metros cuadrados, el cual antes fue utilizado para acumular colecciones artísticas para monarcas como Carlos V y Felipe II, para después ser uno de los museos más importantes del mundo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En 1989 se construyó una pirámide de cristal rompiendo la monotonía de los grandes bloques grises del museo, que en la actualidad sirve como puerta de acceso.</p>
+		        <br><!--etiqueta para un brinco de renglón-->		      
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        	<a href="360visualizar.html">
+        		<img  src="imagenes/visor_360.png" title="visor">
+        		<!--texto para la imagen-->
+        		<br>
+        		<p>Dar clic para visualizar la estructura en 360°.</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
